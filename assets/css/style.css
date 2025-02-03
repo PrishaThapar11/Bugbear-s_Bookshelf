@@ -1,0 +1,303 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    background-color: #222;
+    margin-bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Playwrite IN', serif;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+    transition: border-bottom 0.3s ease;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Homemade Apple', serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+/* Home Section */
+.home {
+    background-image: url('https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 120%; 
+    background-position: center; 
+    margin-top: 0;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    min-height: 100vh;
+}
+
+.welcome-message {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 30px 0;
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.welcome-message h1 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f8f4f4;
+}
+
+/* Carousel */
+.carousel-container {
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    position: relative;
+    height: 350px;
+    width: 40%;
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #333, #444);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.carousel-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 90%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.carousel-content h2 {
+    font-size: 32px;
+    font-family: 'Satisfy', serif;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.carousel-content p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Bad Script', serif;
+    margin-bottom: 20px;
+}
+
+.carousel-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8a4c1a;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.carousel-content a:hover {
+    background-color: #3c2d1a;
+}
+
+/* Blog */
+.blog {
+    background-image: url('https://images.unsplash.com/photo-1491566102020-21838225c3c8?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.blog h1 {
+    font-family: 'Homemade Apple', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color:#fcfbf7;
+    background-color: rgba(46, 33, 26, 0.8);
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One card per row */
+    gap: 30px;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Blog Card */
+.blog-card {
+    background-color: rgba(54, 38, 30, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(46, 45, 45, 0.2);
+    color: #f4f1e1;
+}
+
+.blog-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog-meta {
+    font-family: 'Bad Script', serif;
+    font-size: 0.9em;
+    color: white;
+    background-color: rgba(54, 38, 30, 0.8);
+    margin-bottom: 15px;
+}
+
+.blog-excerpt {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    background-color: #2f271c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background-color: #804a2d;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Satisfy', serif;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 5px;
+    font-weight: 400;
+}
+
+footer p:nth-child(2) {
+    font-style: italic;
+    color: white;
+    font-family: 'Homemade Apple', serif;
+}
+
+/* Responsive Design */
+/*Smaller Screens */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    /* Home Section */
+    .home {
+        padding: 30px 10px;
+    }
+
+    .welcome-message h1 {
+        font-size: 36px;
+    }
+
+    /* Carousel */
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel-content {
+        padding: 10px;
+    }
+
+    .carousel-content h2 {
+        font-size: 24px;
+    }
+
+    .carousel-content p {
+        font-size: 18px;
+    }
+}
+
+/* Blog Grid */
+@media screen and (min-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
